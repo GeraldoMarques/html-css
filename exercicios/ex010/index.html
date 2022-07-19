@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Link externo é um link que aponta para um outro site</p>
+    <p><a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external"> Repositorio publico no GitHub</a> - Gustavo Guanabara</p> 
+    <!--"a" vem de "ancora"-->
+    <!--A tag "target:_blank" e "rel(relativo)external" no link, devem ser utilizados para caso o site em questão não me pertença-->
+    <p><a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=28&t=1s&ab_channel=CursoemVídeo">Canal do youtube do Gustavo Guanabara</a></p>
+    
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira pagina do site, aqui você pode acessar a minha <a href="page02.html" rel="next" target="_self">segunda pagina</a></p>
+    <!--o rel "next" e "prev" é uma questão de semantica, serve para que os mecanismos de buscas saibam qual a proxima pagina e a anterior-->
+
+    <p>Você também pode acessar a minha <a href="noticias/page03.html" rel="next" target="_self">terceira pagina</a></p>
+    <!--A target "_self" serve para para serve apenas para indicar ao navegador que o link deve permanecer na mesma aba, btw é só migue, se não quiser isso não precisa colocar nada-->
+
+    <h1>Link para download</h1>
+    <p><a href="Link para download/Fiddle sigil.jpg" download="Fiddle sigil.jpg">Baixar imagem de tattoo</a></p>
+</body>
+</html>

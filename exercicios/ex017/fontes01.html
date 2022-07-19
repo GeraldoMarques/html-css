@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        }
+        h1, h2{
+            font: italic bold 2em Arial, Helvetica, sans-serif
+            /* 
+            Algumas configurações de fonte são feitas com frequencia, como font-family, font-wight, font-size, font-style, para poupar o tempo de digitar tudo isso, podemos usar a "shorthand", como a "shorthand font", que funciona na seguinte ordem: font-style > font-weight > font-size > font-family
+            */
+        }
+        /*Medidas absolutas: 
+        cm, mm, in(polegada),px(pixel), pc(paica), pt(ponto)
+
+        Medidas relativas:
+        em(relativa ao tamanho atual da fonte, letra maiscula), ex(relativo a altura X da fonte), rem(relativo ao root, fonte no body), Vw(View widght, relativo a largura da tela lida com %), vh(View height, altura da view port), %
+
+        A W3C indica apenas o uso da medida "px" e "em"
+
+        16px geralmente = 1em (em normalmente é relativo ao tamanho natural da fonte)
+        É recomendavel se usar em, pois ele trabalha com % do tamanho da fonte padrão, oq é bom para caso a fonte tenha que aparecer em uma TV, celular, relogio e etc.
+         */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1> 
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui expedita fuga, vero ex quas quasi, eos corrupti neque soluta assumenda sequi nam porro ea esse explicabo doloremque laboriosam maxime reprehenderit.</p>
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis laudantium aliquid aspernatur provident, aliquam rerum accusantium facilis odit nulla iusto minima quibusdam perferendis sint recusandae. Id impedit nihil omnis reiciendis?</p>
+</body>
+</html>

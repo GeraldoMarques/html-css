@@ -1,0 +1,37 @@
+@charset "UTF-8"; 
+/* 
+    Em HTML, a "id" = " # " em CSS/ é unico no codigo
+    Em HTML, a "class" = " . " em CSS/ pode ser utilizado multiplas vezes no codigo
+*/
+
+body{
+    background-color: rgb(170, 249, 206);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(34, 95, 49);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.basico{
+    color: rgb(132, 23, 132);
+    font-style: italic;
+}
+
+.intermediario{
+    color: crimson;
+}
+
+.avançado{
+    color: blue;
+}
+
+.destaque{
+    background-color: rgba(224, 224, 114, 0.829);
+}

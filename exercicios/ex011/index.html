@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" controls >
+       <source src="midia/kurt-cheel.mp3" type="audio/mpeg">
+       <source src="midia/kurt-cheel.wav" type="audio/wav"> 
+       <!--WAV e OGG estão aqui apenas como exemplos de como seriam colocados outras opções de carregamento de audio-->
+       <source src="midia/kurt-cheel.ogg" type="audio/ogg"> 
+    </audio>
+    
+    <!--<audio src="midia/kurt-cheel.mp3" controls autoplay></audio>-->
+    <!--Acima podemos ver como o codigo pode ser inserido de maneira mais simples, porém, alguns navegadores não são totalmente compativeis com todos os tipos de formatos de audio, então para prevenir esse tipo de situação, deve-se inserir o audio da "mesma maneira" em que inserimos as imagens com source-->
+    <!--MP3, WAV(Arquivo mais pesado), OGG(Formato de audio opensource)-->
+</body>
+</html>
