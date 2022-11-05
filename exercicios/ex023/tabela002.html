@@ -6,14 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        table{
+        body{
             font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
             border-collapse: collapse;
+            width: 600px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgrey;
         }
         th,td{
             border: 1px solid black;
-            width: 100px;
             padding: 10px;
+        }
+        tr:nth-child(2n){
+            background-color: lightskyblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
         }
         thead,tfoot{
             background-color: grey;
@@ -28,6 +41,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes 
             TABLE
+            CAPTION(Legenda da tabela)
             THEAD
                 tr,td,th
             TBODY
@@ -38,15 +52,17 @@
 
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População(2010)</th>
-            <th>População(2021)</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População(2010)</th>
+            <th scope="col">População(2021)</th>
+            <caption>População das unidades federativas</caption>
+
         </thead>
             <tbody>
                 <tr>
                     <td>São Paulo</td>
-                    <td class="numero">41 262 199</td>
-                    <td class="numero">46 649 132</td>
+                    <td class="numero" style="width: 100px;">41 262 199</td>
+                    <td class="numero" style="width: 100px;">46 649 132</td>
                 </tr>
                 <tr>
                     <td>Minas Gerais</td>
@@ -83,10 +99,16 @@
                     <td class="numero">8 452 381</td>
                     <td class="numero">9 240 580</td>
                 </tr>
+                <tr>
+                    <td>BlablaBla</td>
+                    <td class="numero">8 452 381</td>
+                    <td class="numero">9 240 580</td>
+                </tr>
             </tbody>
+
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="numero"><strong>0000</strong></td>
             </tr>
         </tfoot>
